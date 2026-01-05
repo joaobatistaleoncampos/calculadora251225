@@ -1,13 +1,51 @@
-.calculadora{
-    width: 200px;
+.calculadora {
+    width: 250px;
+    height: 300px;
+    border: solid;
+    padding: 20px;
+    border-radius: 5px;
 }
-.calculadora-conteudo{
+
+.calculadora-conteudo {
+    
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 5px;
 }
-.calculadora-numeros{
+
+.calculadora-numeros {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px 5px;
+}
+
+.calculadora-operacoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    gap: 5px 6px;
+
+}
+
+.calculadora-calcula {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 5px;
+    margin-top: 5px;
+}
+
+
+.calculadora-visor {
+    width: 98%;
+    
+    margin-bottom: 15px;
+
+}
+
+.calculadora-visor input[type="text"] {
+    width: 100%;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    text-align: center;
 }

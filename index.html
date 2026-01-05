@@ -10,37 +10,37 @@
 <body>
 <div class="calculadora">
     <div class="calculadora-visor">
-        <input type="text" placeholder="0" disabled>
+        <input type="text" placeholder="0" id="visor" disabled>
 
     </div>
     <div class="calculadora-conteudo">
         <div class="calculadora-numeros">
-            <input type="button" value="9">
-            <input type="button" value="8">
-            <input type="button" value="7">
-            <input type="button" value="6">
-            <input type="button" value="5">
-            <input type="button" value="4">
-            <input type="button" value="3">
-            <input type="button" value="2">
-            <input type="button" value="1">
-            <input type="button" value="0">
+            <input type="button" value="9"onclick="addNumero(9)">
+            <input type="button" value="8"onclick="addNumero(8)">
+            <input type="button" value="7"onclick="addNumero(7)">
+            <input type="button" value="6"onclick="addNumero(6)">
+            <input type="button" value="5"onclick="addNumero(5)">
+            <input type="button" value="4"onclick="addNumero(4)">
+            <input type="button" value="3"onclick="addNumero(3)">
+            <input type="button" value="2"onclick="addNumero(2)">
+            <input type="button" value="1"onclick="addNumero(1)">
+            <input type="button" value="0"onclick="addNumero(0)">
 
         </div>
 
         <div class="calculadora-operacoes">
-    <input type="button" value="%">
-    <input type="button" value="*">
-    <input type="button" value="-">
-    <input type="button" value="+">
+    <input type="button" value="%" onclick="addSinal('%')">
+    <input type="button" value="*" onclick="addSinal('*')">
+    <input type="button" value="-" onclick="addSinal('-')">
+    <input type="button" value="+" onclick="addSinal('+')">
     
         </div>
 
     </div>
 
     <div class="calculadora-calcula">
- <input type="button" value="C">
- <input type="button" value="=">
+ <input type="button" value="C" onclick="limpar()">
+ <input type="button" value="=" onclick="calcula()">
     </div>
 
 </div>
